@@ -1,0 +1,25 @@
+
+@if (ventana){
+  @if (nota>51 && nota<101) {
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close" (click)="closeModal()">&times;</span>
+            <h2>Aprobo la materia con <label style="color: rgb(0, 255, 0);">{{nota}}</label></h2>
+          </div>
+        </div>
+    }@else if (nota<51 && nota>=0) {
+      <div class="modal">
+          <div class="modal-content">
+            <span class="close" (click)="closeModal()">&times;</span>
+            <h2>Reprobó la materia con <label style="color: red;">{{nota}}</label></h2>
+          </div>
+        </div>
+    }@else {
+      <div class="modal">
+          <div class="modal-content">
+            <span class="close" (click)="closeModal()">&times;</span>
+            <h2>Error en la Nota</h2>
+          </div>
+        </div>
+    }
+}

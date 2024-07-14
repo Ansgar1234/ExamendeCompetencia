@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+.body{
+    margin: 0;
+    background-image: url('../public/1.png');
+    background-size: cover;
+    background-position: center;    
+    padding: 8%;
+    height: 100%;
+}

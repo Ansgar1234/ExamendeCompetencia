@@ -1,0 +1,153 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #ffffff;
+  flex-direction: column;
+  
+}
+
+.navbar {
+  background-color: #1e042d;
+  border-radius: 10px;
+  width:  60%;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+.container1{
+  margin-top: 3%;
+  display: flex;
+  height: 100%;
+  width: 65%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px;
+  
+  background-color: #520057;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
+}
+.container-head{
+ float: left;
+  width: 65%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  color: #6a1b9a;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #1e042d;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  height: 100%;
+  width: 65%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #3f0447;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar-item:hover {
+  color: #1e042d;
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+  }
+
+  .navbar-item {
+      margin: 0.5rem 0;
+  }
+}
+
+
+.styled-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.styled-form label {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: medium;
+}
+
+.styled-form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #1e042d;
+  border-radius: 5px;
+  
+  background-color: #1e042d;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.styled-form input:focus {
+  border-color: #1e042d;
+}
+
+.styled-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  
+  background-color: #1e042d;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.styled-form button:hover {
+  background-color: #000000;
+}
+

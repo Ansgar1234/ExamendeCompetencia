@@ -1,0 +1,22 @@
+<body>
+<div class="form-container">
+    @if (this.nombre && this.nacimiento && this.nota) {
+        @if (nacimiento > actual - 100 && nacimiento <= actual || nacimiento == null) {
+            @if (nota>=0 && nota<=100) {
+                
+                     <h2 class="form-title">Datos del formulario:</h2>
+                     <h3 class="form-subtitle">Nombre:</h3>
+                     <h4 class="form-data">{{nombre}}</h4>
+                     <h3 class="form-subtitle">Año de nacimiento:</h3>
+                     <h4 class="form-data">{{nacimiento}}</h4>
+                     <h3 class="form-subtitle">Nota:</h3>
+                     <h4 class="form-data">{{nota}}</h4>
+            }@else {
+                <h2 class="form-error">Error en los datos del formulario...</h2>
+            }
+        } @else {
+            <h2 class="form-error">Error en los datos del formulario...</h2>
+        }
+    }
+</div>
+</body>

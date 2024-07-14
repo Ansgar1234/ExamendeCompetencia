@@ -1,0 +1,39 @@
+<html>
+<body>
+
+  <div class="container-head">
+    <h1>Examen de Competencia para Auxiliares de Docencia</h1>
+  </div>
+  <div class="container">
+    <form [formGroup]="form" class="styled-form">
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" formControlName="nombre" type="text">
+      
+      <label for="nacimiento">Año de Nacimiento:</label>
+      <input id="nacimiento" formControlName="nacimiento" type="number">
+      
+      <label for="nota">Nota:</label>
+      <input id="nota" formControlName="nota" type="number">
+      
+      <button (click)="asignar()" >Enviar</button>
+    </form>
+  </div>
+  @if (nombre && nacimiento && nota) {      
+    <div class="navbar">
+      <div class="navbar-container">
+        <a href="/" class="navbar-item">Restablecer</a>    
+        <a [routerLink]="['/ej1',nombre,nacimiento,nota]" class="navbar-item">formulario</a>
+        <a [routerLink]="['/ej2',nombre,edad]" class="navbar-item">Edad </a>
+        <a [routerLink]="['/ej3',nota,ventana]" class="navbar-item">ventana modal</a>
+      </div>
+    </div>
+  }
+  
+  <div class="container1">
+    <router-outlet></router-outlet>
+
+  </div>
+  
+</body>
+</html>
+
